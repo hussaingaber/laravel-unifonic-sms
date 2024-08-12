@@ -1,0 +1,29 @@
+{
+    "name": "granada-pride/unifonic-sms",
+    "description": "A Laravel package for integrating Unifonic SMS with the Laravel notification system.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "GranadaPride\\UnifonicSms\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GranadaPride\\UnifonicSms\\UnifonicSmsServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Hussein Gaber",
+            "email": "148823784+hussaingaber@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "config": {
+        "optimize-autoloader": true,
+        "classmap-authoritative": true
+    }
+}
