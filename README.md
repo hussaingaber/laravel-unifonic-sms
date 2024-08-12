@@ -62,6 +62,23 @@ return [
 ];
 ```
 
+To enable logging for the Unifonic SMS package, you can add a custom log channel in your config/logging.php file:
+
+```php
+'channels' => [
+    // Other log channels...
+
+    'unifonic' => [
+        'driver' => 'single',
+        'path' => storage_path('logs/unifonic.log'),
+        'level' => 'error',
+    ],
+],
+```
+
+This configuration ensures that Unifonic SMS logs are stored in a separate log file at storage/logs/unifonic.log and
+only logs messages with a severity level of error or higher.
+
 ## Usage
 
 After configuring the package, you can send SMS notifications:

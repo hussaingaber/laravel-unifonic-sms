@@ -28,7 +28,7 @@ class UnifonicSmsChannel
                 ]);
 
             if ($response->failed()) {
-                Log::error('Failed to send SMS via Unifonic', [
+                Log::channel('unifonic')->error('Failed to send SMS via Unifonic', [
                     'phone' => $data['phone'],
                     'message' => $data['message'],
                     'response' => $response->body(),
@@ -36,7 +36,7 @@ class UnifonicSmsChannel
             }
 
         } catch (Exception $e) {
-            Log::error('Exception occurred while sending SMS via Unifonic', [
+            Log::channel('unifonic')->error('Exception occurred while sending SMS via Unifonic', [
                 'phone' => $data['phone'],
                 'message' => $data['message'],
                 'error' => $e->getMessage(),
