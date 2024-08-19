@@ -12,13 +12,13 @@ class UnifonicSmsServiceProvider extends ServiceProvider
 {
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/config/unifonic.php', 'unifonic');
+        $this->mergeConfigFrom(__DIR__.'/../config/unifonic.php', 'unifonic');
     }
 
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/config/unifonic.php' => config_path('unifonic.php'),
+            __DIR__.'/../config/unifonic.php' => config_path('unifonic.php'),
         ]);
 
         $this->app->make(ChannelManager::class)->extend('unifonic', function () {
