@@ -1,5 +1,5 @@
-https://img.shields.io/packagist/dt/granada-pride/unifonic-sms
-
+[![Github All Releases]([https://img.shields.io/github/downloads/atom/atom/total.svg](https://img.shields.io/packagist/dt/granada-pride/unifonic-sms
+))]()
 # Unifonic SMS for Laravel
 
 **Unifonic SMS** is a Laravel package that provides seamless integration with
